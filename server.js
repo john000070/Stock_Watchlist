@@ -20,6 +20,11 @@ const limiter = rateLimit({
 });
 app.use(limiter);
 
+// ✅ Add this home route here
+app.get("/", (req, res) => {
+  res.send("✅ Stock Watchlist API is running");
+});
+
 // ✅ Log MONGO URI
 console.log("MONGO_URI:", process.env.MONGO_URI);
 
