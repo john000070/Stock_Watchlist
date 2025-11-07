@@ -3,14 +3,14 @@ const express = require('express');
 const mongoose = require('mongoose');
 const helmet = require('helmet');
 const rateLimit = require('express-rate-limit');
-const xss = require('xss-clean');
+
 const cors = require('cors');
 require('dotenv').config();
 
 const app = express();
 app.use(express.json());
 app.use(helmet());
-app.use(xss());
+
 app.use(cors());
 
 // ✅ Rate limit
