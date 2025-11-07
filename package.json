@@ -13,9 +13,8 @@
     "express-rate-limit": "^8.2.1",
     "helmet": "^8.1.0",
     "mongoose": "^8.19.3",
-    "xss-clean": "^0.1.4",
-    "start": "node server.js"
-    
+    "xss-clean": "^0.1.4"
+   
   }
   
 }
