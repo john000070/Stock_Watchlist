@@ -20,7 +20,7 @@ const limiter = rateLimit({
 });
 app.use(limiter);
 
-// ✅ Add this home route here
+// ✅ Add home route
 app.get("/", (req, res) => {
   res.send("✅ Stock Watchlist API is running");
 });
